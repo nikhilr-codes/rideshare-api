@@ -5,4 +5,5 @@ class RideSerializers(serializers.ModelSerializer):
     class Meta:
         model =Ride
         fields='__all__'
+        read_only= ['rider','driver','status']
         
